@@ -1,9 +1,10 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
-
+# NAME: kevin hormaza
+# DATE: October 6, 2025
+# BRIEF DESCRIPTION: This program converts temperatures between Celsius and Fahrenheit.
+# The user chooses which conversion to perform and enters a temperature.
+# The program then displays the converted value.
 
 
 # 1. Make sure you fill out the comments above
@@ -15,11 +16,19 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+print("===== Temperature Converter =====\n")
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius\n")
 
+choice = int(input("Please choose from the above menu: "))
+temperature = float(input("Enter a temperature to convert: "))
 
-
-
-
+if choice == 1:
+    result = temperature * 9/5 + 32
+    print(f"\n{temperature} degrees Celsius is {result} degrees Fahrenheit.")
+elif choice == 2:
+    result = (temperature - 32) * 5/9
+    print(f"\n{temperature} degrees Fahrenheit is {result} degrees Celsius.")
 
 
 
@@ -92,7 +101,10 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
-
+That small changes in formulas can make a big difference in output.
+I already used if and elif in a previous project, but this lab helped me apply them in a cleaner way.
+It showed how small changes in math formulas can completely change the output, 
+so I learned to double check parentheses and arithmetic first.
 
 
 
